@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <header class="header">
+        <h1 class="header-title">Figuras geometricas</h1>
+        <p class="header-description">Calcular diferentes medidas de figuras Geometricas
+            como área y perímetro.</p>
+    </header>
+    <!--Respuesra-->
+    <div class="answer">
+        <p id="result"></p>
+    </div>
+    <!--Seccion de Cajas-->
+    <section class="figure">
+        <div class="box">
+            <div class="box-header">
+                <h2>Cuadrado</h2>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text">¿Cuanto mide cada lado de tu cuadrado?</p>
+                <input class="box-main__inpunt" type="number" name="inputSide" id="inputSide" placeholder="Ingrese los lados">
+                <button class="box-main__btn" type="button" onclick="calculatePerimSquare()">Perímetro</button>
+                <button class="box-main__btn" type="button" onclick="calculateAreaSquare()">Área</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">
+                <h2>Triangulo</h2>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text">¿Cuanto mide cada lado de tu Triangulo?</p>
+                <input class="box-main__inpunt" type="number" name="TrianSide" id="TrianSide" placeholder="Ingrese Lado 1">
+                <input class="box-main__inpunt" type="number" name="TrianSide" id="TrianSide" placeholder="Ingrese Lado 2">
+                <input class="box-main__inpunt" type="number" name="TrianSide" id="TrianSide" placeholder="Ingrese Lado 3">
+                <button class="box-main__btn" type="button" onclick="calculatePerimTriangle()">Perímetro</button>
+                <p class="box-main__text">¿Cuanto base y altura de tu triangulo?</p>
+                <input class="box-main__inpunt" type="number" name="side" id="side" placeholder="Base">
+                <input class="box-main__inpunt" type="number" name="side" id="side" placeholder="Altura">
+                <button class="box-main__btn" type="button">Área</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header">
+                <h2>Circulo</h2>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text">¿Cuanto mide el radio de tu Circulo?</p>
+                <input class="box-main__inpunt" type="number" name="side" id="side" placeholder="Ingrese  Radio">
+                <button class="box-main__btn" type="button">Diametro</button>
+                <button class="box-main__btn" type="button">Perimetro</button>
+                <button class="box-main__btn" type="button">Área</button>
+            </div>
+        </div>
+    </section>
+    <script src="geometry.js"></script>
+</body>
+
+</html>
